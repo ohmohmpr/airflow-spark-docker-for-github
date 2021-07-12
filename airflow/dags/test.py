@@ -9,8 +9,6 @@ default_args = {"owner": "airflow"}
 spark_config = {
     'master':'spark://spark:7077'
 }
-# create_pet_table, populate_pet_table, get_all_pets, and get_birth_date are examples of tasks created by
-# instantiating the Postgres Operator
 
 with DAG(
     dag_id="spark_operator_dag",
